@@ -15,5 +15,8 @@ const Player = (sign) => {
 };
 
 const displayController = (() => {
-    
+    const fieldElements = document.querySelectorAll(".field");
+
+    fieldElements.forEach((field) => 
+    field.textContent = 'x');
 })();
