@@ -1,3 +1,4 @@
+///Devuelve el signo del jugador
 const Player = (sign) => {
     this.sign = sign;
 
@@ -8,6 +9,7 @@ const Player = (sign) => {
     return { getSign };
 };
 
+///Tabla del juego
 const gameBoard = (() => {
     const board = ["", "", "", "", "", "", "", "", "", ];
 
@@ -29,6 +31,7 @@ const gameBoard = (() => {
 
     return { setField, getField, reset };
 })();
+
 
 const displayController = (() => {
     const fieldElements = document.querySelectorAll(".field");
